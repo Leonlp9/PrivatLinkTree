@@ -5,7 +5,7 @@
     <title>Title</title>
 
 <!--    device zooming-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.85">
 
     <style>
         .cards{
@@ -24,6 +24,14 @@
             border-radius: 10px;
             text-align: center;
             cursor: pointer;
+            transition: 100ms;
+            padding-bottom: 10px;
+        }
+
+        .card:hover{
+            background: #333333;
+            padding-bottom: 0px;
+            padding-top: 10px;
         }
 
         .card img{
@@ -31,6 +39,12 @@
             position:relative;
             top: -15px;
             height: 80px;
+            transition: all 100ms;
+        }
+
+        .card:hover img{
+            height: 90px;
+            top: -25px;
         }
 
         h1{
@@ -55,12 +69,23 @@
 </head>
 <body style="background: #111111">
 
+<div style="text-align: center; margin: 10px 10px 40px;">
+    <img src="https://avatars.githubusercontent.com/u/73760817?v=4" style="border-radius: 50%" alt="">
     <h1>Leon_lp9</h1>
+</div>
 
     <div class="cards">
         <div class="card">
+            <img src="512pxIcon.png" alt="">
+            <h2>Utopia Netzwerk</h2>
+        </div>
+        <div class="card">
             <img src="https://play-lh.googleusercontent.com/0oO5sAneb9lJP6l8c6DH4aj6f85qNpplQVHmPmbbBxAukDnlO7DarDW0b-kEIHa8SQ" alt="">
             <h2>Utopia Discord</h2>
+        </div>
+        <div class="card">
+            <img src="https://www.socialkoenig.de/wp-content/uploads/2021/10/tiktok.png" alt="">
+            <h2>Utopia TikTok</h2>
         </div>
         <div class="card">
             <img src="https://yt3.ggpht.com/584JjRp5QMuKbyduM_2k5RlXFqHJtQ0qLIPZpwbUjMJmgzZngHcam5JMuZQxyzGMV5ljwJRl0Q=s900-c-k-c0x00ffffff-no-rj" alt="">
@@ -85,10 +110,6 @@
         <div class="card">
             <img src="https://www.socialkoenig.de/wp-content/uploads/2021/10/tiktok.png" alt="">
             <h2>Leon_lp9</h2>
-        </div>
-        <div class="card">
-            <img src="https://www.socialkoenig.de/wp-content/uploads/2021/10/tiktok.png" alt="">
-            <h2>Utopia Netzwerk</h2>
         </div>
     </div>
 
