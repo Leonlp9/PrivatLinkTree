@@ -51,6 +51,7 @@ Utopia, Discord Utopia, Utopia Tiktok, Leon_lp9 Twitch, Leon_lp9 YouTube..." />
             top: -15px;
             height: 80px;
             transition: all 100ms;
+            filter: drop-shadow(0px 15px 6px #343438);
         }
 
         .card:hover img{
@@ -98,6 +99,9 @@ Utopia, Discord Utopia, Utopia Tiktok, Leon_lp9 Twitch, Leon_lp9 YouTube..." />
         <a href="https://discord.gg/aStTgY4B7C" target="_blank" class="card">
             <img src="https://play-lh.googleusercontent.com/0oO5sAneb9lJP6l8c6DH4aj6f85qNpplQVHmPmbbBxAukDnlO7DarDW0b-kEIHa8SQ" alt="">
             <h2>Utopia Discord</h2>
+
+            <div style="font-family: 'Agency FB'; color: white; font-size: 1.2rem; font-weight: 550; margin-top: 10px" id="widget-header-count"></div>
+
         </a>
         <a href="https://www.tiktok.com/@utopiamc.de" target="_blank"  class="card">
             <img src="https://www.socialkoenig.de/wp-content/uploads/2021/10/tiktok.png" alt="">
@@ -132,7 +136,26 @@ Utopia, Discord Utopia, Utopia Tiktok, Leon_lp9 Twitch, Leon_lp9 YouTube..." />
             <img src="http://store-images.s-microsoft.com/image/apps.26737.9007199266244427.c75d2ced-a383-40dc-babd-1ad2ceb13c86.ed1d047e-03d9-4cd8-a342-c4ade1e58951" alt="">
             <h2>Leon_lp9</h2>
         </a>
+        <a href="https://open.spotify.com/user/g8edde3hlqu2gyq8g1k5slgza?si=a52264eb77c24843" target="_blank"  class="card">
+            <img src="https://link-types-assets.production.linktr.ee/spotify/icon.svg" alt="">
+            <h2>Leon_lp9</h2>
+        </a>
     </div>
+
+<script>
+
+    let count = document.getElementById("widget-header-count");
+
+    window.addEventListener('load', () => {
+        fetch(`https://discord.com/api/guilds/746669192241086504/widget.json`).then(data => {
+            data.json().then(data => {
+                //member count
+                count.innerHTML = `${data.presence_count - 1} Members Online`;
+            });
+        });
+    });
+
+</script>
 
 </body>
 </html>
