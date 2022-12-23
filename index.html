@@ -21,6 +21,15 @@ Utopia, Discord Utopia, Utopia Tiktok, Leon_lp9 Twitch, Leon_lp9 YouTube..." />
         @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
+        @font-face {
+            font-family: 'minecraft';
+            src: url('fonts/minecraft.ttf');
+        }
+
+        *{
+            scroll-behavior: smooth;
+        }
+
         .cards{
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -79,11 +88,23 @@ Utopia, Discord Utopia, Utopia Tiktok, Leon_lp9 Twitch, Leon_lp9 YouTube..." />
             padding-top: 10px;
             font-family: 'VT323', monospace;
             transition: all 200ms;
+            font-weight: 600;
         }
 
         .card:hover h2{
             font-size: 2.2rem;
         }
+
+        .blockOnHover{
+            background: fuchsia;
+            aspect-ratio: 16/9;
+        }
+
+        .blockOnHover:hover{
+            display: none;
+        }
+
+
     </style>
 
 </head>
@@ -143,12 +164,48 @@ Utopia, Discord Utopia, Utopia Tiktok, Leon_lp9 Twitch, Leon_lp9 YouTube..." />
             <img src="https://link-types-assets.production.linktr.ee/spotify/icon.svg" alt="">
             <h2>Leon_lp9</h2>
         </a>
+        <a href="#overlays" class="card">
+            <img src="https://cdn1.iconfinder.com/data/icons/art-and-culture/50/67-512.png" alt="">
+            <h2>Leon_lp9's Overlays</h2>
+        </a>
     </div>
 
 <div style="max-width: 874px; margin: 30px auto 0; width: 75%;">
+
+    <h1 style="font-size: 35px">Schau doch rein wenn ich Live bin :)</h1>
+
     <iframe src="https://player.twitch.tv/?channel=leon_lp9&parent=leonlp9.github.io" frameborder="0" allowfullscreen="true" scrolling="no" style="width: 100%; aspect-ratio: 16/9; border-radius: 10px"></iframe>
 </div>
 
+<div style="max-width: 874px; margin: 30px auto 0; width: 75%;" id="overlays">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 style="font-size: 45px">Meine eigenen Overlays Editor :)</h1>
+    <br>
+    <br>
+    <br>
+    <h1 style="font-size: 30px; font-family: minecraft; font-weight: 1">Du willst einen TTS bot mit Overlay haben?</h1>
+    <a href="https://leonlp9.github.io/TwitchTTS/" style="font-family: minecraft; color: palegreen; font-size: 20px; font-weight: 100">Twitch TTS | With Overlay!</a>
+    <iframe class="overlay" src="https://leonlp9.github.io/TwitchTTS/" frameborder="0" allowfullscreen="false" scrolling="no" style="width: 100%; aspect-ratio: 16/9; border-radius: 10px"></iframe>
+
+    <br>
+    <br>
+    <br>
+    <h1 style="font-size: 30px; font-family: minecraft; font-weight: 1">Du willst Werbung schick einblenden lassen?</h1>
+    <a href="https://leonlp9.github.io/WeOv-Bot/" style="font-family: minecraft; color: palegreen; font-size: 20px; font-weight: 100">WeOv-Bot (Idee von Flambrix)</a>
+    <iframe class="overlay" src="https://leonlp9.github.io/WeOv-Bot/" frameborder="0" allowfullscreen="false" scrolling="no" style="width: 100%; aspect-ratio: 16/9; border-radius: 10px"></iframe>
+
+    <br>
+    <br>
+    <br>
+    <h1 style="font-size: 30px; font-family: minecraft; font-weight: 1">Du willst eine Party Kanone haben?</h1>
+    <a href="https://leonlp9.github.io/PartyKanone/" style="font-family: minecraft; color: palegreen; font-size: 20px; font-weight: 100">Party Kanone (Idee von marpyyy)</a>
+    <iframe class="overlay" src="https://leonlp9.github.io/PartyKanone/" frameborder="0" allowfullscreen="false" scrolling="no" style="width: 100%; aspect-ratio: 16/9; border-radius: 10px"></iframe>
+
+</div>
 
 <script>
 
